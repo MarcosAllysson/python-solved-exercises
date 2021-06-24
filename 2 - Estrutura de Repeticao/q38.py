@@ -1,3 +1,4 @@
+from datetime import date
 """
 Um funcionário de uma empresa recebe aumento salarial anualmente: Sabe-se que:
 Esse funcionário foi contratado em 1995, com salário inicial de R$ 1.000,00;
@@ -6,23 +7,35 @@ A partir de 1997 (inclusive), os aumentos salariais sempre correspondem ao dobro
 Faça um programa que determine o salário atual desse funcionário. Após concluir isto, altere o programa permitindo
 que o usuário digite o salário inicial do funcionário.
 """
-
-# 1995 = 1.000
-# 1996 = + 1.5%
-# 1997 = ano anterior * 2
+# Ano atual
+ano_atual = date.today().year
 
 
-def aumento_salarial(r):
-    salario_inicial = 1000
-    desconto_inicial = 0.015
-    desconto_seguinte = desconto_inicial * 2
+def aumento_salarial(ano_usuario, salario_usuario):
+    salario = salario_usuario
+    percentual = 1.5 / 100
+    novo_salario = salario + percentual * salario
 
-    for i in range(r):
-        print(f'Salário inicial: R$ {salario_inicial}')
-        print(f'Desconto inicial: {desconto_inicial}, novo salário acrescenta: R$ {salario_inicial * desconto_inicial}')
-        print(f'Salário ano seguinte aumenta: R$ {salario_inicial * desconto_seguinte}')
-        print()
+    while ano_usuario <= ano_atual:
+        novo_percentual = percentual * 2
+        novo_salario += novo_percentual * novo_salario
+        ano_usuario += 1
+
+    return f'\n \033[36mNovo salário atual em {ano_atual}, é de:\033[m R$ {novo_salario:.2f}'
 
 
-aumento_salarial(2)
+# Programa principal
+while True:
+    try:
+        while True:
+            ano = int(input('Informe o ano de entrada: '))
+            sal = float(input('Informe o salário: R$ '))
+            if 1900 <= ano <= ano_atual and sal >= 1:
+                print(aumento_salarial(1997, sal))
+                break
+            print(f'\n \033[31mErro: ano mínimo permitido 1900 até ano atual e salário superior a R$ 1.\033[m')
 
+        # saindo do loop
+        break
+    except:
+        print('\033[31mTente novamente, pois houve algum erro...\033[m')
