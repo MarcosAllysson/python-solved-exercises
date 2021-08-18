@@ -5,3 +5,13 @@ Given:
 Expected output:
     [10, 20, [300, 400, [5000, 6000, 7000], 500], 30, 40]
 """
+
+
+def add_item_list(list_original, item):
+    list_original[2][2].insert(2, item)
+
+    return list_original
+
+
+list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+print(add_item_list(list1, 700))
