@@ -7,3 +7,13 @@ Given List:
 Expected output:
     ['a', 'b', ['c', ['d', 'e', ['f', 'g', 'h', 'i', 'j'], 'k'], 'l'], 'm', 'n']
 """
+
+
+def sub_list(list_original, sub):
+    list_original[2][1][2].extend(sub)
+    return list_original
+
+
+list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+sub = ["h", "i", "j"]
+print(sub_list(list1, sub))
