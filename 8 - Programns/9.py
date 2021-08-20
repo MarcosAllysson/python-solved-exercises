@@ -11,8 +11,8 @@ Expected output:
 def replace_value_list(list_original, value=0, replace_number=0):
     if len(list_original) > 0:
 
-        list_index = list_original.index(20)
-        list_original[list_index] = 200
+        list_index = list_original.index(value)
+        list_original[list_index] = replace_number
 
         return list_original
 
