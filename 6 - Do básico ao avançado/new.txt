@@ -1,0 +1,18 @@
+Writing a in a new file
+This is a message 
+Another line 
+Third lineWriting a in a new file
+This is a message 
+Another line 
+Third lineHere goes another string messageWith "a" mode, instead of delete everything, it appends the new text at the endWriting a in a new file
+This is a message 
+Another line 
+Third line
+Here goes another string message
+With "a" mode, instead of delete everything, it appends the new text at the end
+Writing a in a new file
+This is a message 
+Another line 
+Third line
+Here goes another string message
+With "a" mode, instead of delete everything, it appends the new text at the end
