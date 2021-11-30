@@ -1,5 +1,6 @@
 .idea
 venv
+.vscode
 *.pyc
 *.json
 .mypy_cache/

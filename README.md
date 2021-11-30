@@ -1,7 +1,9 @@
 # Listagem de Programas Com Python
-- Programas desenvolvidos com a linguagem de programação python.
+
+- Programas desenvolvidos com a linguagem.
 
 ## Conceitos aplicados
+
 - Estrutura Sequencial
 - Decisão
 - Repetição
