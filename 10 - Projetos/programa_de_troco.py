@@ -4,7 +4,7 @@ Programa de troco - O usuário insere um custo e depois a quantia de dinheiro da
 """
 
 
-def programa_de_troco(custo, quantia):
+def programa_de_troco(custo: float, quantia: float) -> None:
     try:
         if 0 <= quantia >= custo >= 0:
             print(f'Custo R$: {custo:.2f}, quantia recebida R$: {quantia:.2f}'

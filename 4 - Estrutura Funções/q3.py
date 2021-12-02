@@ -3,7 +3,7 @@ Faça um programa, com uma função que necessite de três argumentos, e que for
 """
 
 
-def sum_numbers(*args):
+def sum_numbers(*args) -> list:
     return f'Soma: {sum(args[0])}'
 
 

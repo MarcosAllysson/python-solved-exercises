@@ -9,13 +9,13 @@ para um n informado pelo usuário. Use uma função que receba um valor n inteir
 """
 
 
-def print_line(num):
+def print_line(num) -> str:
     for n in range(1, num + 1):
         print(f' {n} ', end='')
     print()
 
 
-def print_sequence(num):
+def print_sequence(num) -> int:
     for num in range(num + 1):
         print_line(num)
 
