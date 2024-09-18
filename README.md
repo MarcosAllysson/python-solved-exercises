@@ -1,18 +1,18 @@
-# Listagem de Programas Com Python
+# Listing of Programs with Python
 
-- Programas desenvolvidos com a linguagem.
+- Programs developed with the language.
 
-## Conceitos aplicados
+## Concepts applied
 
-- Estrutura Sequencial
-- Decisão
-- Repetição
-- Listas
-- Funções
+- Sequential Structure
+- Decision
+- Repetition
+- Lists
+- Functions
 - Strings
-- Arquivos
+- Files
 - Classes
-- Projetos
-- Funções lambda
-- Compreensão em listas
-- Cores
+- Projects
+- Lambda functions
+- List comprehension
+- Colors
